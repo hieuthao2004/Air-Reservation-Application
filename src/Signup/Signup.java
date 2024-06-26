@@ -13,24 +13,16 @@ import Customer.Customer;
 import Customer.CustomerFactory;
 
 public class Signup {
-    private static JLabel id;
-    private static JTextField enterId;
-    private static JLabel name;
-    private static JTextField enterName;
-    private static JLabel dob;
-    private static JTextField enterDob;
+    private static JLabel id, name, dob, success, fail;
+    private static JTextField enterId, enterName, enterDob;
     private static JButton signUp;
-    private static JLabel success;
-    private static JLabel fail;
-
     public static void main(String[] args) {
         new Signup().setVisible(true);
     }
-    
     public void setVisible(boolean option) {
-        JFrame frame2 = new JFrame("Signup to VN Airline");
-        frame2.setSize(400, 400);
-        frame2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        JFrame frame = new JFrame("Signup to VN Airline");
+        frame.setSize(400, 400);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         JPanel panel = new JPanel();
         panel.setLayout(null);
         id = new JLabel("Enter your ID");
@@ -81,7 +73,7 @@ public class Signup {
         panel.add(signUp);
         panel.add(success);
         panel.add(fail);
-        frame2.add(panel);
-        frame2.setVisible(true);
+        frame.add(panel);
+        frame.setVisible(true);
     }
 }     
