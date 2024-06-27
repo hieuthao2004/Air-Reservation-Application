@@ -9,16 +9,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Login {
-    private static JLabel header;
-    private static JLabel username;
-    private static JTextField enterUsername;
-    private static JLabel password;
-    private static JTextField enterPassword;
-    private static JButton submit;
-    private static JLabel error;
-    private static JLabel success;
-    private static JLabel createAccount;
-    private static JButton signup;
+    private static JLabel header, username, password, error, success, createAccount;
+    private static JTextField enterUsername, enterPassword;
+    private static JButton submit, signup;
     public static void main(String[] args) {        
         JFrame frame = new JFrame("VN Airline");
         frame.setSize(400, 400);
